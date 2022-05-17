@@ -1,4 +1,4 @@
-# DICE: Directed Sparsification for OOD Detection 
+# Less is More: Leveraging Sparse Weights for Detecting the Deep Unknowns
 
 In this work, we reveal important insights that reliance on unimportant weights and units can directly attribute to the brittleness of OOD detection. To mitigate the issue, we propose a sparsification-based OOD detection framework termed DICE. Our key idea is to rank weights based on a measure of contribution, and selectively use the most salient weights to derive the output for OOD detection
 
@@ -21,11 +21,11 @@ and [Textures](https://arxiv.org/pdf/1311.3618.pdf),
 and de-duplicated concepts overlapped with ImageNet-1k.
 
 For iNaturalist, SUN, and Places, we have sampled 10,000 images from the selected concepts for each dataset,
-which can be download via the following links:
+which can be download via: 
+
+
 ```bash
-wget http://pages.cs.wisc.edu/~huangrui/imagenet_ood_dataset/iNaturalist.tar.gz
-wget http://pages.cs.wisc.edu/~huangrui/imagenet_ood_dataset/SUN.tar.gz
-wget http://pages.cs.wisc.edu/~huangrui/imagenet_ood_dataset/Places.tar.gz
+./download_ood.sh
 ```
 
 For Textures, we use the entire dataset, which can be downloaded from their
