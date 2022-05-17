@@ -1,7 +1,4 @@
-# On the Effectiveness of Sparsification for Detecting the Deep Unknowns
-
-This is the source code for paper [On the Effectiveness of Sparsification for Detecting the Deep Unknowns](https://arxiv.org/abs/2111.09805)
-by Yiyou Sun and Yixuan Li.
+# DICE: Directed Sparsification for OOD Detection 
 
 In this work, we reveal important insights that reliance on unimportant weights and units can directly attribute to the brittleness of OOD detection. To mitigate the issue, we propose a sparsification-based OOD detection framework termed DICE. Our key idea is to rank weights based on a measure of contribution, and selectively use the most salient weights to derive the output for OOD detection
 
@@ -82,17 +79,3 @@ Run `./demo-imagenet.sh`.
 ### 2. Demo code for CIFAR Experiment 
 
 Run `./demo-cifar.sh`.
-
-## Citation
-
-If you use our codebase, please cite our work:
-```
-@inproceedings{sun2021dice,
-  title={On the Effectiveness of Sparsification for Detecting the Deep Unknowns},
-  author={Sun, Yiyou and Li, Yixuan},
-  year={2021},
-  eprint={2111.09805},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG}
-}
-```
